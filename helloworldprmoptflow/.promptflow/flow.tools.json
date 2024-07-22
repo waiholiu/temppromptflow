@@ -1,21 +1,33 @@
 {
-    "package": {},
-    "code": {
-        "chat.jinja2": {
-            "type": "llm",
-            "inputs": {
-                "question": {
-                    "type": [
-                        "string"
-                    ]
-                },
-                "chat_history": {
-                    "type": [
-                        "string"
-                    ]
-                }
-            },
-            "description": "Chat with Chatbot"
+  "package": {},
+  "code": {
+    "chat.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        },
+        "question": {
+          "type": [
+            "string"
+          ]
         }
+      },
+      "source": "chat.jinja2"
+    },
+    "split.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "split.py",
+      "function": "my_python_tool"
     }
+  }
 }
