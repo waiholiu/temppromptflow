@@ -25,13 +25,6 @@ nodes:
     deployment_name: gpt4o
     max_tokens: 4096
     temperature: 0.7
-    chat_history: ${inputs.chat_history}
     question: ${inputs.question}
   connection: gpt4o-connection
   api: chat
-- name: split
-  type: python
-  source:
-    type: code
-    path: split.py
-  inputs: {}

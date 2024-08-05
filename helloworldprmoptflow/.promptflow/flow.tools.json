@@ -4,11 +4,6 @@
     "chat.jinja2": {
       "type": "llm",
       "inputs": {
-        "chat_history": {
-          "type": [
-            "string"
-          ]
-        },
         "question": {
           "type": [
             "string"
@@ -27,6 +22,18 @@
         }
       },
       "source": "split.py",
+      "function": "my_python_tool"
+    },
+    "starter.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "starter.py",
       "function": "my_python_tool"
     }
   }

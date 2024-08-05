@@ -1,5 +1,5 @@
 
-from promptflow import tool
+from promptflow.core import tool
 
 
 # The inputs section will change based on the arguments of the tool function, after you save the code
@@ -7,4 +7,6 @@ from promptflow import tool
 # Please update the function name/signature per need
 @tool
 def my_python_tool(input1: str) -> str:
-    return 'hello ' + input1
+    return 'what is 1 + 1'
+
+
